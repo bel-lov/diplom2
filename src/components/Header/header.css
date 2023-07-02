@@ -6,7 +6,7 @@
 }
 
 .header__logo {
-    margin-top: 15px;
+    margin-top: 0;
     height: 64px;
     line-height: 64px;
 }
@@ -53,7 +53,7 @@
 
 .header__slogan {
     width: 506px;
-    margin-top: 415px;
+    margin-top: 305px;
     margin-left: 50px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .ticket {
-    margin-top: 298px;
+    margin-top: 198px;
     margin-left: 104px;
     width: 729px;
     background-color: #292929;
@@ -85,7 +85,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .ticket-form__head {
@@ -149,7 +149,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .header-form__date {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .datepicker {
@@ -168,8 +168,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-top: 90px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 0;
     font-size: 100%;
     vertical-align: baseline;
