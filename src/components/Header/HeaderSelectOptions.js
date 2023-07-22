@@ -11,6 +11,7 @@ import rotate from "./../../img/icons/rotate.svg";
 import calendar from "./../../img/icons/calendar.svg";
 import { useDispatch } from "react-redux";
 
+
 export default function HeaderSelectOptions() {
     const dispatch = useDispatch();
     const [valueFrom, setValueFrom] = useState("");
@@ -21,9 +22,11 @@ export default function HeaderSelectOptions() {
     const [dateTo, setDateTo] = useState("");
     const [dateBack, setDateBack] = useState("");
 
+
     const handleChangeFrom = (evt) => {
         setValueFrom(evt.target.value);
     };
+
 
     const handleChangeTo = (evt) => {
         setValueTo(evt.target.value);
@@ -89,6 +92,8 @@ export default function HeaderSelectOptions() {
                                     </div>
                                     <div className="rotate">
                                         <img src={rotate} alt="rotate" />
+                                        {/* {<Datalist arg={(valueFrom, valueTo)} onClick={rotateItems} />} */}
+
                                     </div>
                                     <div className="train-select__header-form__item">
                                         <input

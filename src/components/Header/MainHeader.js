@@ -25,6 +25,11 @@ export default function MainHeader() {
     const [dateTo, setDateTo] = useState("");
     const [dateBack, setDateBack] = useState("");
 
+    const changeDirection = () => {
+        setValueFrom(valueTo)
+        setValueTo(valueFrom)
+    }
+
     const handleChangeFrom = (evt) => {
         setValueFrom(evt.target.value);
     };
@@ -102,8 +107,9 @@ export default function MainHeader() {
                                         alt="geolocation"
                                     />
                                 </div>
-                                <div className="rotate">
-                                    <img src={rotate} alt="rotate" />
+                                <div className="rotate" onClick={changeDirection}>
+                                    <img src={rotate}
+                                        alt="rotate" />
                                 </div>
                                 <div className="header-form__item">
                                     <input
